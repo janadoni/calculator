@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" class="calci" action="" method="POST">
+        <input type="text" name="answer" placeholder="" id="display">
+        <br> <br>
+
+
+
+        <input type="button" value="c" onclick="form1.answer.value=''" class="button">
+
+
+        <input type="button" value="<" class="button" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1) ">
+        <input type="button" value="00" class="button" onclick="form1.answer.value+='00'">
+
+
+        <input type="button" value="/" class="operator" onclick="form1.answer.value+='/'">
+        <br><br>
+
+        <input type="button" value="7" class="button" onclick="form1.answer.value+='7'">
+        <input type="button" value="8" class="button" onclick="form1.answer.value+='8'">
+        <input type="button" value="9" class="button" onclick="form1.answer.value+='9'">
+
+
+        <input type="button" value="*" class="operator" onclick="form1.answer.value+='*'">
+        <br> <br>
+        <input type="button" value="4" class="button" onclick="form1.answer.value+='4'">
+        <input type="button" value="5" class="button" onclick="form1.answer.value+='5'">
+        <input type="button" value="6" class="button" onclick="form1.answer.value+='6'">
+
+
+        <input type="button" value="-" class="operator" onclick="form1.answer.value+='-'">
+        <br> <br>
+
+        <input type="button" value="1" class="button" onclick="form1.answer.value+='1'">
+        <input type="button" value="2" class="button" onclick="form1.answer.value+='2'">
+        <input type="button" value="3" class="button" onclick="form1.answer.value+='3'">
+
+
+        <input type="button" value="+" class="operator" onclick="form1.answer.value+='+'">
+        <br> <br>
+        <input type="button" id="zero" value="0" class="button" onclick="form1.answer.value+='0'">
+        <input type="button" value="." class="button" onclick="form1.answer.value+='.'">
+        <input type="button"  value="=" class="operator" onclick="form1.answer.value=eval(form1.answer.value)">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+
+    </form>
+
+</body>
+</html>
